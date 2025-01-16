@@ -13,6 +13,10 @@ body {
 
 /* Shared Style */
 
+main {
+    padding: 1% 2%;
+}
+
 .display-flex {
     display: flex;
 }
@@ -68,10 +72,40 @@ header nav {
     width: 100%;
 }
 
+/* Styling for Our Features Section */
+.features-about {
+    margin-left: 40px;
+}
+
+.grid-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.our-features {
+    align-items: center;
+}
+
+/* Styling for Features you will learn section */
+
+.exp-image img {
+    width: 100%;
+}
+
+.feature-experience {
+    gap: 100px;
+    justify-content: space-between;
+}
+
+
 
 
 @media screen and (max-width: 576px) {
-    nav {
+
+    nav,
+    .our-features {
         flex-direction: column;
     }
 
@@ -79,6 +113,12 @@ header nav {
         margin: 0;
         padding: 0;
     }
+
+    .grid-image-container {
+        grid-template-columns: 1fr;
+    }
+
+
 
 
 }
