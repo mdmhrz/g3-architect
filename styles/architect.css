@@ -13,12 +13,20 @@ body {
 
 /* Shared Style */
 
+.primary-color {
+    color: #FF900E;
+}
+
+.primary-bg {
+    background-color: #FF900E;
+}
+
 section {
     margin-bottom: 100px;
 }
 
 main {
-    padding: 1% 2%;
+    padding: 1% 8%;
 }
 
 .display-flex {
@@ -34,6 +42,8 @@ main {
     font-weight: 699;
     transition: background-color .5s, box-shadow .5s;
     margin-bottom: 30px;
+    cursor: pointer;
+    font: 1.25rem;
 }
 
 .btn-primary:hover {
@@ -41,12 +51,17 @@ main {
     box-shadow: 3px 5px 5px lightgray;
 }
 
+.dark3 {
+    color: rgba(114, 114, 114, 1);
+    font-size: 1rem;
+}
+
 
 /* Style for Header */
 header {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 1% 2%;
+    padding: 1% 8%;
     background-color: rgba(255, 144, 14, 0.1);
 }
 
@@ -57,6 +72,8 @@ header {
 .nav-links a {
     text-decoration: none;
     padding: 0 10px;
+    font-size: 1.15rem;
+    font-weight: 500;
 }
 
 header nav {
@@ -76,10 +93,26 @@ header nav {
     width: 100%;
 }
 
+.banner {
+    text-align: center;
+}
+
 /* Styling for Our Features Section */
 .features-about {
     margin-left: 40px;
 }
+
+.quick-list-title,
+.section-title {
+    font-size: 2.85rem;
+    font-weight: 700;
+}
+
+#quick {
+    font-weight: 500;
+    font-size: 2.85rem;
+}
+
 
 .grid-image-container {
     display: grid;
@@ -90,9 +123,24 @@ header nav {
 
 .our-features {
     align-items: center;
+    padding: 0 5%;
 }
 
+
 /* Styling for Features you will learn section */
+
+.ft-experience {
+    gap: 100px;
+}
+
+.ft-container {
+    max-width: 580px;
+}
+
+.ft-container p {
+    color: rgba(114, 114, 114, 1);
+    font-size: 1rem;
+}
 
 .ft-image img {
     width: 100%;
