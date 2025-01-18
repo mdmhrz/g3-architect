@@ -158,12 +158,26 @@ header nav {
     padding: 20px;
 }
 
+.ft-image-div {
+    padding: 30px;
+    border-radius: 8px;
+    margin-left: -60px;
+    margin-top: -80px;
+    border: none;
+    color: white;
+}
+
+.ft-image-div h1,
+.ft-image-div p {
+    margin: 0;
+}
+
 /* Some Facts Related Styles */
 
 .fact-card-container {
     display: grid;
     grid-template-columns: repeat(4, 240px);
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
 }
 
@@ -179,11 +193,27 @@ header nav {
     gap: 30px;
     justify-content: space-between;
     align-items: center;
+    display: flex;
 }
 
 .sponsors-container img {
     filter: grayscale(100%);
 }
+
+/* Footer Styling */
+
+footer {
+
+    text-align: center;
+    padding: 0 8%;
+
+}
+
+footer div {
+    background-color: #FFF4E7;
+    padding: 10px 0;
+}
+
 
 
 
@@ -196,7 +226,7 @@ header nav {
     nav,
     .our-features,
     .ft-experience,
-    .sponsors-container {
+    .ft-experience {
         flex-direction: column;
     }
 
@@ -207,6 +237,15 @@ header nav {
 
     .grid-image-container {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .fact-card-container {
+        grid-template-columns: repeat(2, 220px);
+    }
+
+    .sponsors-container {
+        flex-direction: column;
     }
 }
 
